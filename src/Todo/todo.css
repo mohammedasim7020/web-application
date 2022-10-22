@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Kalam', cursive,Arial, Helvetica, sans-serif;
+    background-color: #dfe4ea;
+    /* animation: .5s ease-in slideInLeft; */
+}
+/* @keyframes slideInLeft {
+    0% {
+      opacity: 1;;
+    }
+    10%{
+        opacity: 0.9;
+    }
+    20%{
+        opacity: 0.8;
+    }
+    30%{
+        opacity: 0.7;
+    }
+    40%{
+        opacity: 0.6;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    60%{
+        opacity: 0.4;
+    }
+    70%{
+        opacity: 0.3;
+    }
+    80%{
+        opacity: 0.2;
+    }
+    90%{
+        opacity: 0.1;
+    }
+    100% {
+      opacity: 0;;
+    }
+  } */
+.container--input{
+    display: flex;
+    width: 60%;
+    justify-content: center;
+    margin-top: 100px;
+    margin-left: 19%;
+    padding: 30px 20px;
+    position: relative;
+    background-color: #2f3542;
+    box-shadow: 5px 6px 15px 1px #353b48;
+    border-radius: 5px;
+}
+.input--cont{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+label{
+    color: #a4b0be;
+}
+.container--input:focus-within label{
+    transform: translate(20px,5px) scale(1);
+}
+.input--cont > input{
+    width: 70%;
+    padding: 5px;
+    font-size: larger;
+    border-radius: 10px;
+    border: none;
+    outline: 1px solid gray;
+    background-color: transparent;
+    color: #ced6e0;
+}
+.input--cont > input:focus{
+    outline: 1px solid #dfe4ea;
+}
+label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #ced6e0;
+    transform: translate(80px,37px);
+    transition: transform 0.25s;
+}
+.add--btn{
+    width: 100px;
+    padding: 5px;
+    font-size: medium;
+    font-family: 'Kalam', cursive,Arial, Helvetica, sans-serif;
+    background-color: #0a51a8;
+    font-weight: 600;
+    border:1px solid black;
+    cursor: pointer;
+    border-radius: 10px;
+} 
+.add--btn:hover{
+    transform: scale(1.1);
+    transition: all .2s ease-in;
+    background-color: green
+}
+.todo--container > p{
+    font-size: 70px;
+    position: absolute;
+    top: 0;
+    left: 45%;
+    font-weight: 900;
+    opacity: 0.5;
+}
+.card--cont{
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 50px;
+    display: flex;
+    padding: 15px;
+    justify-content: space-evenly;
+    background-color: #2f3542;
+    border-radius: 5px;
+    box-shadow: 5px 6px 15px 1px #353b48;
+}
+.card--cont > span{
+    width: 80%;
+    font-size: medium;
+    color: #ced6e0;
+}
+.del--btn{
+    width: 100px;
+    padding: 5px;
+    font-size: medium;
+    font-family: 'Kalam', cursive,Arial, Helvetica, sans-serif;
+    background-color: transparent;
+    font-weight: 600;
+    border:1px solid #dfe4ea;
+    cursor: pointer;
+    border-radius: 10px;
+    color: #dfe4ea;
+}
+.del--btn:hover{
+    /* transform: scale(1.1); */
+    background-color: aliceblue;
+    color: #2f3542;
+    transition: background-color .3s ease-in;
+}
+#chkbox{
+    transform: scale(1.2);
+}
+
+.card-title{
+    text-decoration: line-through;
+}
